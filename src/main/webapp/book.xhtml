@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+
+	<h:body>
+		<h1>New Book</h1>
+        <h:form>
+        	<fieldset>
+            	 <legend>Dados do Livro</legend>
+            	 
+            	 	<!-- trecho omitido -->
+					<h:outputLabel value="Titulo:" for="title" />
+					<h:inputText id="title" value="#{bookBean.book.title}" />
+
+					<h:outputLabel value="ISBN:" for="isbn" />
+					<h:inputText id="isbn" value="#{bookBean.book.isbn}" />
+
+					<h:outputLabel value="Preço:" for="price" />
+					<h:inputText id="price" value="#{bookBean.book.price}" />
+
+					<h:outputLabel value="Data de Lançamento:" for="launchData" />
+					<h:inputText id="dataLancamento" value="#{bookBean.book.launchData}" />
+					
+    				<h:inputText id="launchData" />
+
+    				<h:commandButton value="Save" action="#{bookBean.save}" />
+    			</h:panelGrid>
+        	</fieldset>
+
+        </h:form>
+    </h:body>
+
+
+</html>
